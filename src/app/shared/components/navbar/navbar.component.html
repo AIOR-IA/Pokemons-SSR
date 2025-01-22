@@ -1,0 +1,13 @@
+<nav class="text-white top-0 z-50 w-full flex flex-wrap items-center gap-10 justify-center px-2 py-3 navbar-expand-lg bg-stone-800 shadow-2xl">
+  @for (item of paths; track $index) {
+    <a
+      [routerLink]="item.path"
+      routerLinkActive="text-yellow-500"
+      class="text-white"
+    >
+      {{ item.name }}
+    </a>
+  }
+
+
+</nav>
