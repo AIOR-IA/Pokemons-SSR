@@ -13,7 +13,7 @@ export class NavbarComponent {
   public paths = [
     {
       name: 'Pokemons',
-      path: '/pokemons'
+      path: '/pokemons/page/1'
     },
     {
       name: 'About',
