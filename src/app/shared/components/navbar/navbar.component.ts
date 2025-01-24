@@ -1,27 +1,31 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './navbar.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavbarComponent {
   public paths = [
     {
+      name: 'Pokemons',
+      path: '/pokemons'
+    },
+    {
       name: 'About',
-      path: 'about'
+      path: '/about'
     },
     {
       name: 'Contact',
-      path: 'contact'
+      path: '/contact'
     },
     {
       name: 'Pricing',
-      path: 'price'
+      path: '/price'
     }
   ]
 
